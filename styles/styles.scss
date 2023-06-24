@@ -1,0 +1,40 @@
+@use './mixins.scss' as m;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hdr {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    &__sub-heading {
+        font-style: italic;
+    }
+}
+
+.input-sctn {
+    margin-bottom: 0.5rem;
+    &__input-form {
+        @include m.flex(center, center, column);
+        * {
+            margin: 0.125rem;
+        }
+        &__btn {
+            background-color: red;
+            color: white;
+            padding: 0.25rem;
+            border-radius: 0.5rem;
+            &:hover {
+                background-color: white;
+                color: red;
+            }
+        }
+    }
+}
+
+.output-sctn {
+    text-align: center;
+    font-size: 1.5rem;
+}

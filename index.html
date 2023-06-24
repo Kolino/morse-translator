@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/script.js" type="module" defer></script>
+</head>
+<body>
+    <header class="hdr">
+        <h1 class="hdr__main-heading">Morse Code Translator</h1>
+        <h3 class="hdr__sub-heading">A simple English-morse code translator</h3>
+    </header>
+
+    <main>
+        <section class="sctn input-sctn">
+            <form class="input-sctn__input-form">
+                <label for="startLang">Translate from: </label>
+                <select name="startLang" id="startLang">
+                    <option value="english">English</option>
+                    <option value="morse">Morse code</option>
+                </select>
+                
+                <label for="inputBox">Enter text to translate: </label>
+                <textarea name="inputBox" id="inputBox" rows="4" cols="50" required>
+                </textarea>
+
+                <input class="input-sctn__input-form__btn" type="submit" id="submitBtn" value="Translate">
+            </form>
+        </section>
+
+        <section class="sctn output-sctn">
+            <p>Translation:</p>
+            <div class="output-sctn__output">
+                <!-- Script generates output here -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
