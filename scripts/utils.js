@@ -80,9 +80,8 @@ export const checkUserInput = (startLang, text) => {
 
 export const translateEnglish = inputStr => {
     if (!checkUserInput('english', inputStr))
-        return -1;
+        throw new Error('Invalid input given.');
 
-    // const inputTrimmed = inputStr.replaceAll(/[\s]/g, '/').split('');
     const trimmedInput = inputStr.trim();
     let retStr = '';
     for (let i = 0; i < trimmedInput.length; i++) {
@@ -107,7 +106,7 @@ export const translateEnglish = inputStr => {
 
 export const translateMorse = inputStr => {
     if (!checkUserInput('morse', inputStr))
-        return -1;
+        throw new Error('Invalid input given.');
 
     const inputTrimmed = inputStr.trim().split(/\s+/);
 

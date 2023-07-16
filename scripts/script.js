@@ -1,5 +1,5 @@
-import { checkUserInput, translateEnglish, translateMorse } from "./utils.js";
-import { appendTextEl } from "./dom-utils.js";
+import { checkUserInput, translateEnglish, translateMorse } from './utils.js';
+import { appendTextEl } from './dom-utils.js';
 
 const inputBox = document.querySelector('#inputBox');
 inputBox.value = '';
